@@ -1,0 +1,39 @@
+class Produto {
+    nome : string 
+    preco : number
+    marca : string
+    descricao : string
+        constructor(
+            nome : string,
+            preco : number,
+            marca : string,
+            descricao : string
+        ){
+            this.nome = nome 
+            this.preco = preco
+            this.marca = marca
+            this.descricao = descricao
+        }
+}
+
+class venda {
+    produto : string
+    quantidade : number
+    valorTotal : number
+    data : Date
+        constructor(
+            produto : string,
+            quantidade : number,
+            valorTotal : number,
+            data : Date
+        ){
+            this.produto = produto
+            this.quantidade = quantidade
+            this.valorTotal = valorTotal
+            this.data = data
+        }
+}
+
+setLucro(){
+    this.valorTotal - this.preco
+}
